@@ -1,0 +1,39 @@
+
+body {
+
+    font-family: Montserrat,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#main_container {
+
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+    'intro_body'
+    'main_body'
+    ;
+
+}
+
+#intro_body {
+
+    grid-area: intro_body;
+    background: cyan;
+
+}
+
+#main_body {
+
+    grid-area: main_body;
+    background-color: blue;
+
+}
