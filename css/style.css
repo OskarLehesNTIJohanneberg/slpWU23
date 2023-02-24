@@ -7,16 +7,16 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0;
-    
+
 }
 
 #main_container {
 
     display: grid;
-    height: 100vh;
+    height: 250vh;
     width: 100vw;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 35% 65%;
     grid-template-areas: 
     'intro_body'
     'main_body'
@@ -27,13 +27,100 @@ body {
 #intro_body {
 
     grid-area: intro_body;
-    background: cyan;
-
+    background-image: url(/img/Blue\ stars\ sky.png);
+    background-size: 100%;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas:
+    'header'
+    'intro_container'
+    ;
 }
 
 #main_body {
 
     grid-area: main_body;
-    background-color: blue;
+    background-color: lightblue;
 
+}
+
+#intro_container {
+
+    grid-area: intro_container;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    'intro_text intro_empty'
+    ;
+
+}
+
+#index_header {
+
+    grid-area: header;
+
+}
+
+#intro_text {
+
+    grid-area: intro_text;
+
+}
+
+#intro_empty {
+
+    grid-area: intro_empty;
+
+}
+
+#nav_container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5% 0 0 4%;
+
+}
+
+#nav_navigation {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 20px;
+
+}
+
+#nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: -.5%;
+}
+
+#nav_logo {
+
+    width: 100%;
+    margin-left: -1%;
+
+}
+
+#logo_block {
+
+    width: 10%;
+
+}
+
+#nav_vertical_ruler {
+    height: 100%;
+    border-left: 1px solid #657180;
+    margin: 0 3%;
+    opacity: .2;
 }
