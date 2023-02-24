@@ -7,7 +7,7 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0;
-
+    
 }
 
 #main-container {
@@ -16,19 +16,29 @@ body {
     height: 250vh;
     width: 100vw;
     grid-template-columns: 100%;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 100vh 5% 100rem;
     grid-template-areas: 
     'intro-body'
+    'splitter'
     'main-body'
     ;
+
+}
+
+.splitter {
+
+    grid-area: splitter;
+    background-color: #230363;
 
 }
 
 #intro-body {
 
     grid-area: intro-body;
-    background-image: url(/img/Blue\ stars\ sky.png);
-    background-size: 100%;
+    background-image: url(/img/night\ sky\ 4k\ stars.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100vw;
     display: grid;
     width: 100vw;
     grid-template-columns: 100%;
@@ -42,7 +52,6 @@ body {
 #main-body {
 
     grid-area: main-body;
-    background-color: lightblue;
 
 }
 
