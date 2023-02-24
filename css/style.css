@@ -1,7 +1,7 @@
 
 body {
 
-    font-family: Montserrat,sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@ body {
 
 }
 
-#main_container {
+#main-container {
 
     display: grid;
     height: 250vh;
@@ -18,15 +18,15 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 35% 65%;
     grid-template-areas: 
-    'intro_body'
-    'main_body'
+    'intro-body'
+    'main-body'
     ;
 
 }
 
-#intro_body {
+#intro-body {
 
-    grid-area: intro_body;
+    grid-area: intro-body;
     background-image: url(/img/Blue\ stars\ sky.png);
     background-size: 100%;
     display: grid;
@@ -35,48 +35,48 @@ body {
     grid-template-rows: 10% 90%;
     grid-template-areas:
     'header'
-    'intro_container'
+    'intro-container'
     ;
 }
 
-#main_body {
+#main-body {
 
-    grid-area: main_body;
+    grid-area: main-body;
     background-color: lightblue;
 
 }
 
-#intro_container {
+#intro-container {
 
-    grid-area: intro_container;
+    grid-area: intro-container;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
     grid-template-areas: 
-    'intro_text intro_empty'
+    'intro-text intro-empty'
     ;
 
 }
 
-#index_header {
+#index-header {
 
     grid-area: header;
 
 }
 
-#intro_text {
+#intro-text {
 
-    grid-area: intro_text;
-
-}
-
-#intro_empty {
-
-    grid-area: intro_empty;
+    grid-area: intro-text;
 
 }
 
-#nav_container {
+#intro-empty {
+
+    grid-area: intro-empty;
+
+}
+
+#nav-container {
 
     display: flex;
     flex-direction: row;
@@ -85,7 +85,7 @@ body {
 
 }
 
-#nav_navigation {
+#nav-navigation {
 
     display: flex;
     flex-direction: row;
@@ -96,31 +96,41 @@ body {
 
 }
 
-#nav_links {
+#nav-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    gap: 3vw;
     align-items: center;
     width: 100%;
     margin-top: -.5%;
 }
 
-#nav_logo {
+#nav-logo {
 
-    width: 100%;
+    width: 75%;
     margin-left: -1%;
+    border-radius: 50%;
 
 }
 
-#logo_block {
+#logo-block {
 
     width: 10%;
+    margin-top: 1vh;
 
 }
 
-#nav_vertical_ruler {
+#nav-vertical-ruler {
     height: 100%;
     border-left: 1px solid #657180;
     margin: 0 3%;
     opacity: .2;
+}
+
+.nav-links {
+
+    text-decoration: none;
+    color: white;
+
 }
