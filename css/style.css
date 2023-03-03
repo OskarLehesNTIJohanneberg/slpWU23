@@ -9,6 +9,17 @@ body {
     
 }
 
+a {
+
+    font-family: 'Dosis', sans-serif;
+
+}
+
+p {
+    font-family: 'Dosis', sans-serifs;
+    color: white;
+}
+
 h1 {
 
     color: white;
@@ -17,11 +28,13 @@ h1 {
 
 }   
 
-a {
+h2 {
 
-    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
 
-}
+}   
 
 #main-container {
 
@@ -178,5 +191,52 @@ a {
 
     text-decoration: none;
     color: white;
+
+}
+
+#work-container {
+
+    
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 33.33vw 33.33vw 33.33vw;
+    grid-template-areas:
+    'wb1 wb2 wb3'
+    ;
+    margin: 1rem;
+
+}
+
+#work-box-1 {
+
+    grid-area: wb1;
+    
+}
+
+#work-box-2 {
+
+    grid-area: wb2;
+    
+}
+
+#work-box-3 {
+
+    grid-area: wb3;
+    
+}
+
+.work-box {
+
+    background-color: transparent;
+    border-radius: 5rem;
+    margin: 3rem;
+    margin-top: 10rem;
+    border-radius: 20%;
+	border: 0.2rem solid white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    align-items: center;
+    justify-items: center;
 
 }
