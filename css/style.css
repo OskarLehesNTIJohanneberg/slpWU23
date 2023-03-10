@@ -1,4 +1,172 @@
 
+
+@media (min-width: 600px) {
+    
+}
+
+@media (min-width: 800px) {
+    
+}
+
+@media (orientation: landscape) {
+
+    
+    h1 {
+
+        color: white;
+        font-size: 4rem;
+        font-family: 'Dosis', sans-serif;
+
+    }   
+
+
+
+    .work-box {
+
+        background-color: transparent;
+        border-radius: 5rem;
+        width: 33.33vw;
+        margin: 3rem;
+        margin-top: 10rem;
+        border-radius: 20%;
+    	border: 0.2rem solid white;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+
+    }
+
+    .work-text {
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+    }
+
+    #work-container {
+
+    
+        display: flex;
+        flex-direction: row;
+        /* grid-template-rows: 100%;
+        grid-template-columns: 33.33vw 33.33vw 33.33vw;
+        grid-template-areas:
+        'wb1 wb2 wb3'
+        ; */
+        margin: 1rem;
+    
+    }
+
+    #intro-body-work {
+
+        grid-area: intro-body;
+        background-image: url(/img/night\ sky\ 4k\ stars.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 100vw;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+        grid-template-areas:
+        'header'
+        'intro-container'
+        ;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    h1 {
+
+        color: white;
+        font-size: 2rem;
+        font-family: 'Dosis', sans-serif;
+    
+    }   
+
+    #example-pic img{
+
+        display: none !important;
+
+    }
+
+    #example-pic {
+
+        background-image: url(/img/text\ bot\ 2.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    
+    .work-box {
+
+        background-color: transparent;
+        border-radius: 5rem;
+        width: 80vw;
+        margin: 3rem;
+        border-radius: 20%;
+    	border: 0.2rem solid white;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+
+    }
+
+    .work-text {
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+    }
+
+    #work-container {
+
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* grid-template-rows: 100%;
+        grid-template-columns: 33.33vw 33.33vw 33.33vw;
+        grid-template-areas:
+        'wb1 wb2 wb3'
+        ; */
+        margin: 1rem;
+    
+    }
+
+    #intro-body-work {
+
+        grid-area: intro-body;
+        background-image: url(/img/night\ sky\ 4k\ stars.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 100vw;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+        grid-template-areas:
+        'header'
+        'intro-container'
+        ;
+        height: 300vh;
+    }
+
+}
+
+
+
+
 body {
 
     display: flex;
@@ -21,13 +189,6 @@ p {
     font-size: 2rem;
 }
 
-h1 {
-
-    color: white;
-    font-size: 4rem;
-    font-family: 'Comfortaa', cursive;
-
-}   
 
 h2 {
 
@@ -195,18 +356,7 @@ h2 {
 
 }
 
-#work-container {
 
-    
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 33.33vw 33.33vw 33.33vw;
-    grid-template-areas:
-    'wb1 wb2 wb3'
-    ;
-    margin: 1rem;
-
-}
 
 #work-box-1 {
 
@@ -224,28 +374,4 @@ h2 {
 
     grid-area: wb3;
     
-}
-
-.work-box {
-
-    background-color: transparent;
-    border-radius: 5rem;
-    margin: 3rem;
-    margin-top: 10rem;
-    border-radius: 20%;
-	border: 0.2rem solid white;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-
-}
-
-.work-text {
-
-    margin-left: 3rem;
-    margin-right: 3rem;
-
 }
