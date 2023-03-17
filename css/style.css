@@ -1,525 +1,146 @@
-@media (min-width: 600px) {
+html {
+  scroll-behavior: smooth;
 }
 
-@media (min-width: 800px) {
-}
-
-@media (orientation: landscape) {
-  h1 {
-    color: white;
-    font-size: 4rem;
-    font-family: "Dosis", sans-serif;
-  }
-
-  .work-box {
-    background-color: black !important;
-    border-radius: 5rem;
-    width: 33.33vw;
-    margin: 3rem;
-    margin-top: 10rem;
-    border-radius: 20%;
-    border: 0.2rem solid white;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-  }
-
-  .work-text {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-  #work-container {
-    display: flex;
-    flex-direction: row;
-    /* grid-template-rows: 100%;
-        grid-template-columns: 33.33vw 33.33vw 33.33vw;
-        grid-template-areas:
-        'wb1 wb2 wb3'
-        ; */
-    margin: 1rem;
-  }
-
-  #intro-body-work {
-    grid-area: intro-body;
-    background-image: url(/img/night\ sky\ 4k\ stars.jpg);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 100vw;
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas:
-      "header"
-      "intro-container";
-  }
-
-  #intro-body-contact {
-    grid-area: intro-body;
-    background-image: url(/img/night\ sky\ 4k\ stars.jpg);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 100vw;
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas:
-      "header"
-      "contact-container";
-  }
-
-  #contact-container-form {
-    grid-area: container-form;
-    background: white !important;
-  }
-
-  #contact-container-form section {
-    background-color: black;
-  }
-
-  #contact-container {
-    display: grid;
-    grid-area: contact-container;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "touch container-form";
-  }
-
-  #get-in-touch {
-    grid-area: touch;
-    position: relative;
-    height: 100%;
-  }
-
-  h3 {
-    font-family: "Dosis", sans-serif;
-    color: black;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  #button-sub {
-    background-color: white;
-    justify-self: right;
-    padding-left: 14rem;
-    margin-bottom: 1rem;
-    margin-top: 0.2rem;
-  }
-
-  #button-mit {
-    background-color: white;
-    margin-right: 5rem;
-    margin-top: 0.2rem;
-    margin-bottom: 1rem;
-  }
-
-  #name-line {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 3rem;
-  }
-
-  #message-line-1 {
-    margin-left: 1rem;
-    margin-top: 8rem;
-  }
-
-  #message-line-2 {
-    margin-right: 1rem;
-    margin-top: 8rem;
-  }
-
-  #subject-line-1 {
-    margin-left: 1rem;
-    margin-top: 3rem;
-  }
-
-  #subject-line-2 {
-    margin-right: 1rem;
-    margin-top: 3rem;
-  }
-
-  h4 {
-    color: white;
-    margin: 0px;
-    font-family: "Dosis", sans-serif;
-    margin-left: 1rem;
-  }
-
-  h5 {
-    justify-self: center;
-    color: white;
-    margin: 0px;
-    font-family: "Dosis", sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 8rem;
-  }
-
-  h6 {
-    text-align: center;
-    font-size: large;
-    color: white;
-    margin: 0px;
-    font-family: "Dosis", sans-serif;
-    margin-top: 1rem;
-  }
-
-  #name-desc {
-    margin-top: 0.15rem;
-  }
-
-  #email-desc {
-    margin-top: 0.15rem;
-  }
-}
-
-@media (orientation: portrait) {
-  h1 {
-    color: white;
-    font-size: 2rem;
-    font-family: "Dosis", sans-serif;
-  }
-
-  #example-pic img {
-    display: none !important;
-  }
-
-  #example-pic {
-    background-image: url(/img/text\ bot\ 2.png);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .work-box {
-    border-radius: 5rem;
-    width: 80vw;
-    margin: 3rem;
-    border-radius: 20%;
-    border: 0.2rem solid white;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    background-color: black !important;
-  }
-
-  .work-text {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-  #work-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* grid-template-rows: 100%;
-        grid-template-columns: 33.33vw 33.33vw 33.33vw;
-        grid-template-areas:
-        'wb1 wb2 wb3'
-        ; */
-    margin: 1rem;
-  }
-
-  #intro-body-work {
-    grid-area: intro-body;
-    background-image: url(/img/night\ sky\ 4k\ stars.jpg);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 100vw;
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas:
-      "header"
-      "intro-container";
-    height: 300vh;
-  }
-
-  #contact-body {
-    height: 100vh;
-  }
-
-  #intro-body-contact {
-    grid-area: intro-body;
-    background-image: url(/img/night\ sky\ 4k\ stars.jpg);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 100vw;
-    height: 100vh;
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas:
-      "header"
-      "contact-container";
-  }
-
-  #contact-container-form {
-    grid-area: container-form;
-    background: white !important;
-  }
-
-  .form-box {
-    background-color: black;
-  }
-
-  #contact-container {
-    display: grid;
-    grid-area: contact-container;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas: "container-form";
-  }
-
-  #get-in-touch {
-    grid-area: touch;
-    position: relative;
-    height: 100%;
-  }
-
-  h3 {
-    font-family: "Dosis", sans-serif;
-    color: black;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  #button-sub {
-    background-color: white;
-    justify-self: right;
-    padding-left: 4.9rem;
-    margin-bottom: 1rem;
-    margin-top: 0.2rem;
-  }
-
-  #button-mit {
-    background-color: white;
-    margin-right: 5rem;
-    margin-top: 0.2rem;
-    margin-bottom: 1rem;
-  }
-
-  #name-line {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 3rem;
-  }
-
-  #message-line-1 {
-    margin-left: 1rem;
-    margin-top: 7rem;
-  }
-
-  #message-line-2 {
-    margin-right: 1rem;
-    margin-top: 7rem;
-  }
-
-  #subject-line-1 {
-    margin-left: 1rem;
-    margin-top: 3rem;
-  }
-
-  #subject-line-2 {
-    margin-right: 1rem;
-    margin-top: 3rem;
-  }
-
-  h4 {
-    color: white;
-    margin: 0px;
-    font-family: "Dosis", sans-serif;
-    margin-left: 1rem;
-  }
-
-  h5 {
-    justify-self: center;
-    color: white;
-    margin: 0px;
-    font-family: "Dosis", sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 8rem;
-  }
-
-  h6 {
-    text-align: center;
-    font-size: large;
-    color: white;
-    margin: 0px;
-    font-family: "Dosis", sans-serif;
-    margin-top: 1rem;
-  }
+.header {
+  transform: none;
+  grid-area: header;
+  height: 100px;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0px;
+  position: relative;
+  min-width: 320px;
+  font-family: "Avenir", sans-serif;
+  font-size: 20px;
+  color: rgba(30, 55, 90, 0.7);
+  -webkit-font-smoothing: antialiased;
+  background-color: black;
+  background-position: center;
+  background-size: 150%;
   width: 100%;
-  margin: 0;
 }
 
-a {
-  font-family: "Dosis", sans-serif;
+.header__inner,
+.header__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100px;
 }
 
-p {
-  font-family: "Dosis", sans-serifs;
+.header__logo img {
+  width: 5rem;
+}
+
+.header__inner {
+  background: black;
+  width: 100% !important;
+}
+
+.header__main-nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header__main-nav li {
+  margin-right: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.nav__links {
+  text-decoration: none;
+  color: #1e375a;
+  font-family: "Avenir", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
   color: white;
-  font-size: 2rem;
 }
 
-h2 {
+.nav__brand {
+  text-decoration: none;
+  color: #1e375a;
+  font-family: "Avenir", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
   color: white;
-  font-size: 2.2rem;
-  font-family: "Comfortaa", cursive;
 }
 
-#main-container {
-  display: grid;
-  height: 100vh;
-  width: 100vw;
+#index__page__container {
+  display: grid !important;
   grid-template-columns: 100%;
-  grid-template-rows: 100vh;
-  grid-template-areas: "intro-body";
-}
-
-#intro-body {
-  grid-area: intro-body;
-  background-image: url(/img/white\ test.png);
-  background-position-x: center;
-  background-position-y: center;
-  background-size: 100vw;
-  display: grid;
-  width: 100vw;
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 80px 1fr 1fr 1fr 1fr;
+  height: 300vh;
   grid-template-areas:
     "header"
-    "intro-container";
+    "home"
+    "work"
+    "contact"
+    "locate";
 }
 
-#main-body {
-  grid-area: main-body;
-}
-
-#intro-container {
-  grid-area: intro-container;
+.home__page {
+  grid-area: home;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas:
-    "intro-text example-pic"
-    "intro-empty example-pic";
-}
-
-.intro-p {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#example-pic {
-  grid-area: example-pic;
-}
-
-#example-pic img {
-  height: 40vw;
-  margin-left: 8vw;
-  transform: rotate(3deg);
-}
-
-#index-header {
-  grid-area: header;
-}
-
-#intro-text-1 {
-  grid-area: intro-text;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20%;
-}
-
-#intro-text-2 {
-  grid-area: intro-empty;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20%;
-}
-
-#nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2.5% 0 0 4%;
-  background-color: cornflowerblue;
-  margin-bottom: -0.2rem;
-}
-
-#nav-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 80%;
-  height: 20px;
-}
-
-#nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 3.5vw;
-  align-items: center;
+  grid-template-areas: "home__intro__text home__animation";
+  background-image: url(/img/black\ background\ test.png);
+  background-position-x: center;
+  background-position-y: 0%;
+  background-size: 100%;
   width: 100%;
-  margin-top: -0.5%;
 }
 
-#nav-logo {
+.home__animation {
+  grid-area: home__animation;
+}
+
+.home__intro__text {
+  grid-area: home__intro__text;
+}
+
+.work__page {
+  grid-area: work;
+}
+
+.contact__page {
+  grid-area: contact;
+}
+
+.locate__page {
+  grid-area: locate;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
-  margin-left: -1%;
-  border-radius: 50%;
 }
 
-#logo-block {
-  width: 10%;
+.sticky + .content {
+  padding-top: 102px;
 }
 
-#nav-vertical-ruler {
-  height: 100%;
-  border-left: 1px solid #657180;
-  margin: 0 3%;
-  opacity: 0.2;
-}
-
-.nav-links {
-  text-decoration: none;
-  color: white;
-}
-
-#work-box-1 {
-  grid-area: wb1;
-}
-
-#work-box-2 {
-  grid-area: wb2;
-}
-
-#work-box-3 {
-  grid-area: wb3;
-}
+@import url("https://fonts.cdnfonts.com/css/avenir");
