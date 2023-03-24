@@ -10,6 +10,45 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+#main-container {
+  display: grid;
+  grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  height: 380vh;
+  grid-template-areas:
+    "nav"
+    "home"
+    "work"
+    "contact"
+    "locate";
+}
+
+nav {
+  grid-area: nav;
+}
+
+.main-boxes {
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042);
+}
+
+#home {
+  grid-area: home;
+}
+
+#work {
+  grid-area: work;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#locate {
+  grid-area: locate;
+}
+
 .container {
   max-width: 1050px;
   width: 90%;
@@ -41,7 +80,7 @@ body {
   color: #0e2431;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0.7rem;
+  padding: 1rem;
 }
 
 .navbar .nav-container a:hover {
