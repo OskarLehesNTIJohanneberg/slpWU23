@@ -109,8 +109,6 @@ body {
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
 }
@@ -121,8 +119,7 @@ body {
   font-weight: 500;
 }
 
-.logo {
-  position: absolute;
+.nav-links {
   top: 5px;
   right: 15px;
   font-size: 1.2rem;
@@ -145,9 +142,25 @@ body {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .logo {
-  display: none;
+@media (orientation: landscape) {
+  .nav-container .checkbox {
+    display: none;
+  }
+
+  .nav-container .hamburger-lines {
+    display: none;
+  }
+
+  .nav-container {
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media (orientation: portrait) {
+  .nav-container .nav-menu {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+  }
 }
