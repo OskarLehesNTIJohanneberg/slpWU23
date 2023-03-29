@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #ddd0c8;
 }
 
 #main-container {
   display: grid;
-  grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 60vh 80vh 80vh 80vh;
   grid-template-columns: 100%;
-  height: 380vh;
+  height: auto;
   grid-template-areas:
     "nav"
     "home"
@@ -41,18 +44,46 @@ nav {
 #home {
   grid-area: home;
   background: #ddd0c8;
+  display: flex;
+  flex-direction: column;
+  padding-left: 9%;
+  justify-content: center;
+}
+
+#home h2 {
+  padding-bottom: 4rem;
 }
 
 #work {
   grid-area: work;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.work-boxes {
+  background-color: #0e2431;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+#work-box-2 {
+  margin: 0;
+}
+
+#work-box-3 {
+  scroll-margin-top: 9.5rem;
 }
 
 #contact {
   grid-area: contact;
+  background: #ddd0c8;
 }
 
 #locate {
   grid-area: locate;
+  background: whitesmoke;
 }
 
 .container {
@@ -81,10 +112,6 @@ nav {
   height: 62px;
 }
 
-.navbar .menu-items {
-  display: flex;
-}
-
 .navbar .nav-container li {
   list-style: none;
 }
@@ -93,13 +120,17 @@ nav {
   text-decoration: none;
   color: #0e2431;
   font-weight: 500;
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin-top: 0.4rem;
+  font-family: "DM Sans", sans-serif;
 }
 
-.navbar .nav-container a:hover {
+.nav-header a:hover {
   font-weight: bolder;
+}
+
+.nav-header a {
+  font-size: 1rem !important;
+  margin-top: 0.6rem;
+  padding: 1rem;
 }
 
 .nav-container {
@@ -121,10 +152,32 @@ nav {
   margin-top: 1rem;
 }
 
+h2 {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  font-size: 5rem;
+}
+
+.main-boxes a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
 .logo-name {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  padding: 1rem;
+  padding-left: 0rem;
+  margin-left: -10vw;
+  letter-spacing: 0.2rem;
 }
 
 .nav-container .hamburger-lines {
@@ -167,12 +220,14 @@ nav {
   padding-top: 120px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
   height: 100vh;
-  width: 100%;
+  width: 110vw;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
   text-align: center;
+  background-color: white;
+  margin-left: -10%;
 }
 
 .navbar .menu-items li {
@@ -223,6 +278,15 @@ nav {
   .nav-container .hamburger-lines {
     display: none;
   }
+
+  .main-boxes {
+    flex-direction: row;
+  }
+
+  .work-boxes {
+    height: 60vh;
+    width: 30vw;
+  }
 }
 
 @media (orientation: portrait) {
@@ -234,7 +298,37 @@ nav {
     position: absolute;
   }
 
+  #home h2 {
+    padding-top: 1rem;
+  }
+
+  .main-boxes {
+    flex-direction: column;
+  }
+
+  .work-boxes {
+    width: 60vw;
+    height: 100rem;
+  }
+
+  #main-container {
+    display: grid;
+    grid-template-rows: 80vh 80vh 120vh 80vh 80vh;
+    grid-template-columns: 100%;
+    height: auto;
+    grid-template-areas:
+      "nav"
+      "home"
+      "work"
+      "contact"
+      "locate";
+  }
+
   .logo-name {
-    margin-top: 0.9rem !important;
+    margin-top: 0.4rem !important;
+  }
+
+  .main-boxes h2 {
+    font-size: 3rem;
   }
 }

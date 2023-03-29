@@ -21,3 +21,4 @@ function navFade() {
       nav.classList.remove("inverted");
     }
   }
+
