@@ -63,9 +63,32 @@ nav {
 }
 
 .work-boxes {
-  background-color: #0e2431;
+  background-color: #ddd0c8;
   margin: 2rem;
   border-radius: 1rem;
+  transition: 0.75s;
+  -webkit-box-shadow: inset 0px 0px 0px 7px #0e2431;
+  -moz-box-shadow: inset 0px 0px 0px 7px #0e2431;
+  box-shadow: inset 0px 0px 0px 7px #0e2431;
+}
+
+.work-boxes:hover {
+  transform: scale(1.03);
+}
+
+.work-box-text {
+  font-size: 1.2rem !important;
+  padding: 2rem;
+  margin-top: -35%;
+}
+
+.work-box-header {
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  color: #0e2431;
+  padding: 2rem;
+  margin-bottom: -30%;
 }
 
 #work-box-2 {
@@ -86,6 +109,10 @@ nav {
   background: whitesmoke;
 }
 
+.work-boxes img {
+  transform: scale(0.25);
+}
+
 .container {
   max-width: 1050px;
   width: 90%;
@@ -98,10 +125,11 @@ nav {
   transition: background-color 0.3s ease;
   position: fixed;
   height: 5rem;
+  z-index: 100;
 }
 
 .inverted {
-  background-color: white !important;
+  background-color: whitesmoke !important;
   box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
 }
 
@@ -125,12 +153,14 @@ nav {
 
 .nav-header a:hover {
   font-weight: bolder;
+  transform: scale(1.1);
 }
 
 .nav-header a {
   font-size: 1rem !important;
   margin-top: 0.6rem;
   padding: 1rem;
+  transition: 0.2s;
 }
 
 .nav-container {
@@ -160,7 +190,7 @@ h2 {
   font-size: 5rem;
 }
 
-.main-boxes a {
+.main-boxes p {
   text-decoration: none;
   color: #0e2431;
   font-weight: 500;
@@ -286,6 +316,10 @@ h2 {
   .work-boxes {
     height: 60vh;
     width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -311,9 +345,13 @@ h2 {
     height: 100rem;
   }
 
+  .work-boxes img {
+    display: none !important;
+  }
+
   #main-container {
     display: grid;
-    grid-template-rows: 80vh 80vh 120vh 80vh 80vh;
+    grid-template-rows: 10vh 80vh 120vh 80vh 80vh;
     grid-template-columns: 100%;
     height: auto;
     grid-template-areas:
@@ -322,6 +360,10 @@ h2 {
       "work"
       "contact"
       "locate";
+  }
+
+  .work-box-header {
+    margin-bottom: 1rem;
   }
 
   .logo-name {
