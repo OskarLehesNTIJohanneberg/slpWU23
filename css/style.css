@@ -76,6 +76,22 @@ nav {
   transform: scale(1.03);
 }
 
+.work-boxes:active {
+  transform: scale(1.25);
+  z-index: 100;
+}
+
+#work-box-1:active {
+  margin-left: 10vw;
+}
+
+#work-box-2:active {
+}
+
+#work-box-3:active {
+  margin-right: 10vw;
+}
+
 .work-box-text {
   font-size: 1.2rem !important;
   padding: 2rem;
@@ -102,6 +118,42 @@ nav {
 #contact {
   grid-area: contact;
   background: #ddd0c8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 #locate {
@@ -351,7 +403,7 @@ h2 {
 
   #main-container {
     display: grid;
-    grid-template-rows: 10vh 80vh 120vh 80vh 80vh;
+    grid-template-rows: 10vh 60vh 180vh 80vh 80vh;
     grid-template-columns: 100%;
     height: auto;
     grid-template-areas:
@@ -363,7 +415,11 @@ h2 {
   }
 
   .work-box-header {
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .work-box-text {
+    margin-top: 0rem;
   }
 
   .logo-name {
