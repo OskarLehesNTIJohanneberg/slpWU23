@@ -537,6 +537,7 @@ footer p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    flex-shrink: inherit;
   }
 
   .review-boxes {
@@ -614,18 +615,20 @@ footer p {
     padding-top: 1rem;
   }
 
+  #home {
+    margin-top: 10vh;
+  }
+
   .main-boxes {
     flex-direction: column;
   }
 
   .work-boxes {
     width: 60vw;
-    height: 100rem;
   }
 
   .review-boxes {
     width: 60vw;
-    height: 100rem;
   }
 
   .work-boxes-pressed {
@@ -656,7 +659,7 @@ footer p {
 
   #main-container {
     display: grid;
-    grid-template-rows: 10vh 60vh 180vh 80vh 80vh;
+    grid-template-rows: 10vh auto auto auto auto;
     grid-template-columns: 100%;
     height: auto;
     grid-template-areas:
@@ -704,10 +707,17 @@ footer p {
   }
 
   #contact-form {
+    margin-left: 3vw;
     margin-right: 3vw;
+    margin-top: 7vh;
+    margin-bottom: 10vh;
   }
 
   #contact-text {
     display: none;
+  }
+
+  #reviews {
+    flex-direction: column;
   }
 }
