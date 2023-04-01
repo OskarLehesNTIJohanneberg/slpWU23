@@ -13,28 +13,34 @@
       <nav>
         <div class="navbar" id="main-nav">
           <div class="container nav-container">
-            <input class="checkbox" type="checkbox" />
+            <input id="checkbox" class="checkbox" type="checkbox" />
             <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+              <span class="dynamic line line1"></span>
+              <!-- line 1 -->
+              <span class="dynamic line line2"></span>
+              <!-- Line 2 -->
+              <span class="dynamic line line3"></span>
+              <!-- Line 3 -->
             </div>
             <div class="nav-links">
               <h1 class="logo-header">
-                <a class="logo-name">April Eleven</a>
+                <a class="logo-name" href="#">April Eleven</a>
               </h1>
               <h1 class="nav-header">
                 <a href="#" class="nav-menu">Home</a
-                ><a href="#work-box-3" class="nav-menu">Work</a
-                ><a href="#" class="nav-menu">Contact</a
-                ><a href="#" class="nav-menu">Locate</a>
+                ><a href="#work-box-1" class="nav-menu">Work</a
+                ><a href="#contact" class="nav-menu">Contact</a
+                ><a href="#reviews" class="nav-menu">Reviews</a
+                ><a href="#locate" class="nav-menu">Locate</a>
               </h1>
             </div>
-            <div class="menu-items">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Locate</a></li>
+            <div class="dynamic menu-items">
+              <li><a href="#" class="nav-link">Home</a></li>
+              <li><a href="#work-box-1" class="nav-link">Work</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+              <li>
+                <a href="#reviews" id="clickme" class="nav-link">Reviews</a>
+              </li>
             </div>
           </div>
         </div>
@@ -47,27 +53,39 @@
         </h2>
       </section>
       <section class="main-boxes" id="work">
-        <div class="work-boxes" id="work-box-1">
+        <div class="work-boxes" id="work-box-1" onclick="changeClass(event)">
           <h3 class="work-box-header">Keywords</h3>
-          <img src="/img/Lightbulb SEO Symbol.png" alt="Lightbulb Symbol" />
+          <img
+            class="work-box-img"
+            src="/img/Lightbulb SEO Symbol.png"
+            alt="Lightbulb Symbol"
+          />
           <p class="work-box-text">
             We find all the ways your target audience are searching online, and
             make sure your website shows why you are the best website in your
             industry.
           </p>
         </div>
-        <div class="work-boxes" id="work-box-2">
+        <div class="work-boxes" id="work-box-2" onclick="changeClass(event)">
           <h3 class="work-box-header">Technical SEO</h3>
-          <img src="/img/Technical SEO Symbol.png" alt="Statistics Symbol" />
+          <img
+            class="work-box-img"
+            src="/img/Technical SEO Symbol.png"
+            alt="Statistics Symbol"
+          />
           <p class="work-box-text">
             Technical SEO is the building blocks to any good strategy – if this
             is wrong, Google may be unable to find and reward you for all the
             other optimisations you are making.
           </p>
         </div>
-        <div class="work-boxes" id="work-box-3">
+        <div class="work-boxes" id="work-box-3" onclick="changeClass(event)">
           <h3 class="work-box-header">SEO Audits</h3>
-          <img src="/img/Rocket Ship Symbol.png" alt="Rocket Ship Symbol" />
+          <img
+            class="work-box-img"
+            src="/img/Rocket Ship Symbol.png"
+            alt="Rocket Ship Symbol"
+          />
           <p class="work-box-text">
             We audit your industry and how Google decides who to rank first.
             This is an essential foundation to increasing organic search
@@ -76,30 +94,108 @@
         </div>
       </section>
       <section class="main-boxes" id="contact">
-        <section>
+        <section id="contact-text">
           <h2>Get In Touch</h2>
           <p>Tell us a bit about yourself.</p>
         </section>
 
-        <form>
+        <form id="contact-form">
           <label id="form-name" for="name">Name:</label>
-          <input type="text" id="name" name="name" /><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          /><br />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+            name="email"
+          /><br />
 
           <label for="phonenumber">Phone Number:</label>
-          <input type="tel" id="phonenumber" name="phonenumber" /><br />
+          <input
+            type="tel"
+            id="phonenumber"
+            name="phonenumber"
+            placeholder="000-000-0000"
+            required
+          /><br />
 
           <label for="message">Message:</label><br />
-          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="How can we help you?"
+            required
+          ></textarea
           ><br />
 
-          <input type="submit" id="submit-btn" value="Submit" />
+          <input
+            type="submit"
+            id="submit-btn"
+            value="Submit"
+            onsubmit="submitForm()"
+          />
         </form>
       </section>
-      <section class="main-boxes" id="locate"></section>
+      <section class="main-boxes" id="locate">
+        <section>
+          <h2>Find Us</h2>
+          <h3>Fredrik Bagges Gata 19</h3>
+        </section>
+        <section id="map-box">
+          <iframe
+            class="iframe"
+            width="500"
+            height="300"
+            src="https://api.maptiler.com/maps/64b5d354-4634-457d-abd3-a1d036554475/?key=kDUfSZvK2eAGGfAq6dlC#14.1/57.88634/11.58915"
+          >
+          </iframe>
+        </section>
+      </section>
+      <section class="main-boxes" id="reviews">
+        <div class="work-boxes" id="work-box-1" onclick="changeClass(event)">
+          <h3 class="work-box-header">Ryan Reynolds</h3>
+          <img
+            class="work-box-img"
+            src="/img/Lightbulb SEO Symbol.png"
+            alt="Lightbulb Symbol"
+          />
+          <p class="work-box-text">"amazing quote by Ryan Reynolds"</p>
+        </div>
+        <div class="work-boxes" id="work-box-2" onclick="changeClass(event)">
+          <h3 class="work-box-header">Tintin Sjöhäst</h3>
+          <img
+            class="work-box-img"
+            src="/img/Technical SEO Symbol.png"
+            alt="Statistics Symbol"
+          />
+          <p class="work-box-text">"Amazing quote by Tintin Sjöhäst"</p>
+        </div>
+        <div class="work-boxes" id="work-box-3" onclick="changeClass(event)">
+          <h3 class="work-box-header">John Dough</h3>
+          <img
+            class="work-box-img"
+            src="/img/Rocket Ship Symbol.png"
+            alt="Rocket Ship Symbol"
+          />
+          <p class="work-box-text">"Amazing quote by John Dough"</p>
+        </div>
+      </section>
     </container>
+    <footer>
+      <p>+46 76 564 53 59</p>
+      <p>marketing@aprileleven.net</p>
+    </footer>
+
     <script src="/js/index.js"></script>
   </body>
 </html>
