@@ -17,6 +17,15 @@ function changeClass(e) {
    e.target.className = 'work-boxes';
 }
 }
+
+function reviewClass(e) {
+  if (e.target.className.trim() === 'review-boxes') {
+   e.target.className = 'review-boxes-pressed';
+} else {
+   e.target.className = 'review-boxes';
+}
+
+}
 // Hämta hambuger meny elementet
 document.getElementById('checkbox').addEventListener('click', ActiveClasses)
 
