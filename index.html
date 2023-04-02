@@ -9,7 +9,7 @@
     <title>April Eleven</title>
   </head>
   <body>
-    <container id="main-container">
+    <div id="main-container">
       <nav>
         <div class="navbar" id="main-nav">
           <div class="container nav-container">
@@ -35,29 +35,31 @@
               </h1>
             </div>
             <div class="dynamic menu-items">
-              <li><a href="#" class="nav-link">Home</a></li>
-              <li><a href="#work-box-1" class="nav-link">Work</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
-              <li>
-                <a href="#reviews" id="clickme" class="nav-link">Reviews</a>
-              </li>
+              <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#work-box-1" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                  <a href="#reviews" id="clickme" class="nav-link">Reviews</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </nav>
-      <section class="main-boxes" id="home">
-        <p href="">Why do all the hard work alone?</p>
+      <div class="main-boxes" id="home">
+        <p>Why do all the hard work alone?</p>
         <h2>
           Simple and Effective <br />
           AI Software
         </h2>
-      </section>
-      <section class="main-boxes" id="work">
+      </div>
+      <div class="main-boxes" id="work">
         <div class="work-boxes" id="work-box-1" onclick="changeClass(event)">
           <h3 class="work-box-header">Keywords</h3>
           <img
             class="work-box-img"
-            src="/img/Lightbulb SEO Symbol.png"
+            src="/img/Lightbulb-SEO-Symbol.png"
             alt="Lightbulb Symbol"
           />
           <p class="work-box-text">
@@ -70,7 +72,7 @@
           <h3 class="work-box-header">Technical SEO</h3>
           <img
             class="work-box-img"
-            src="/img/Technical SEO Symbol.png"
+            src="/img/Technical-SEO-Symbol.png"
             alt="Statistics Symbol"
           />
           <p class="work-box-text">
@@ -83,7 +85,7 @@
           <h3 class="work-box-header">SEO Audits</h3>
           <img
             class="work-box-img"
-            src="/img/Rocket Ship Symbol.png"
+            src="/img/Rocket-Ship-Symbol.png"
             alt="Rocket Ship Symbol"
           />
           <p class="work-box-text">
@@ -92,12 +94,12 @@
             visibility on Google.
           </p>
         </div>
-      </section>
-      <section class="main-boxes" id="contact">
-        <section id="contact-text">
+      </div>
+      <div class="main-boxes" id="contact">
+        <div id="contact-text">
           <h2>Get In Touch</h2>
           <p>Tell us a bit about yourself.</p>
-        </section>
+        </div>
 
         <form id="contact-form">
           <label id="form-name" for="name">Name:</label>
@@ -145,13 +147,13 @@
             onsubmit="submitForm()"
           />
         </form>
-      </section>
-      <section class="main-boxes" id="locate">
-        <section>
+      </div>
+      <div class="main-boxes" id="locate">
+        <div>
           <h2>Find Us</h2>
           <h3>Fredrik Bagges Gata 19</h3>
-        </section>
-        <section id="map-box">
+        </div>
+        <div id="map-box">
           <iframe
             class="iframe"
             width="500"
@@ -159,38 +161,50 @@
             src="https://api.maptiler.com/maps/64b5d354-4634-457d-abd3-a1d036554475/?key=kDUfSZvK2eAGGfAq6dlC#14.1/57.88634/11.58915"
           >
           </iframe>
-        </section>
-      </section>
-      <section class="main-boxes" id="reviews">
-        <div class="review-boxes" id="review-box-1" onclick="reviewClass(event)">
+        </div>
+      </div>
+      <div class="main-boxes" id="reviews">
+        <div
+          class="review-boxes"
+          id="review-box-1"
+          onclick="reviewClass(event)"
+        >
           <h3 class="work-box-header">Ryan Reynolds</h3>
           <img
             class="review-box-img"
-            src="/img/ryan reynolds uncentered.jpg"
-            alt="Lightbulb Symbol"
+            src="/img/ryan-reynolds.jpg"
+            alt="Picture of Ryan Reynolds"
           />
           <p class="work-box-text">"amazing quote by Ryan Reynolds"</p>
         </div>
-        <div class="review-boxes" id="review-box-2" onclick="reviewClass(event)">
+        <div
+          class="review-boxes"
+          id="review-box-2"
+          onclick="reviewClass(event)"
+        >
           <h3 class="work-box-header">Tintin Sjöhäst</h3>
           <img
             class="review-box-img"
-            src="/img/ryan reynolds uncentered.jpg"
-            alt="Statistics Symbol"
+            src="/img/ryan-reynolds.jpg"
+            alt="Picture of Tintin Sjöhäst"
           />
           <p class="work-box-text">"Amazing quote by Tintin Sjöhäst"</p>
         </div>
-        <div class="review-boxes id="review-box-3" onclick="reviewClass(event)">
+        <div
+          class="review-boxes"
+          id="review-box-3"
+          onclick="reviewClass(event)"
+        >
           <h3 class="work-box-header">John Dough</h3>
           <img
             class="review-box-img"
-            src="/img/ryan reynolds uncentered.jpg"
-            alt="Rocket Ship Symbol"
+            src="/img/ryan-reynolds.jpg"
+            alt="Picture of John Dough"
           />
           <p class="work-box-text">"Amazing quote by John Dough"</p>
         </div>
-      </section>
-    </container>
+      </div>
+    </div>
     <footer>
       <p>+46 76 564 53 59</p>
       <p>marketing@aprileleven.net</p>
