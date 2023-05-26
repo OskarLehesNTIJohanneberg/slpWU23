@@ -535,8 +535,26 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     flex-shrink: inherit;
+  }
+
+  #review-box-text-1 {
+
+    margin-top: -14rem;
+
+  }
+
+  #review-box-text-2 {
+
+    margin-top: -14rem;
+
+  }
+
+  .review-box-img {
+
+scale: 2 !important;
+
   }
 
   .review-boxes {
@@ -702,6 +720,7 @@ footer p {
 
   .work-box-text {
     margin-top: 0rem;
+    text-align: left !important;
   }
 
   .review-box-text {
